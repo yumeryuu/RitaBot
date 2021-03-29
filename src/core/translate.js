@@ -89,7 +89,7 @@ const bufferChains = function(data, from)
          {
             return;
          }
-         if (detectedLang !== channelFrom && channelFrom !== "auto")
+         else if (detectedLang !== channelFrom && channelFrom !== "auto")
          {
             return;
          }
@@ -295,14 +295,10 @@ module.exports = function(data) //eslint-disable-line complexity
             {
                return;
             }
-            if (detectedLang !== channelFrom && channelFrom !== "auto")
+            else if (detectedLang !== channelFrom && channelFrom !== "auto")
             {
                return;
             }
-
-
-
-
 
             const title = `\`\`\`LESS\n ${lang.name} (${lang.native}) \`\`\`\n`;
             const output = "\n" + title + translateFix(res.text) + "\n";
@@ -341,8 +337,7 @@ module.exports = function(data) //eslint-disable-line complexity
          {
             return;
          }
-
-         if (detectedLang !== channelFrom && channelFrom !== "auto")
+         else if (detectedLang !== channelFrom && channelFrom !== "auto")
          {
             return;
          }
